@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction } from 'express';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import path from 'path';
 import dotenv from 'dotenv';
@@ -54,7 +54,7 @@ app.use((req, res, next) => {
 });
 
 // Manejo de errores global
-app.use((err: AppError, req: Request, res: Response, next: NextFunction) => {
+app.use((err: AppError, req: Request, res: Response) => {
   console.error(err);
 
   const status = err.status || 500;
