@@ -3,4 +3,4 @@ PetBook is a collaborative app that connects pet owners with service providers. 
 
 
 ## Documentación Adicional
-- [Detalles del Proyecto](project-details.md)
+- [Detalles del Proyecto](documents/project-details.md)
