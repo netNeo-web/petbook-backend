@@ -18,6 +18,7 @@ PetBook es una aplicación colaborativa que conecta usuarios que buscan servicio
   - Funcionalidades adicionales: comentar sobre un proveedor y chatear en tiempo real con los mismos.
 
 - **Usuario que ofrece un servicio**:
+
   - Creará un perfil que incluye: nombre, apellido, email, breve descripción, servicios ofrecidos (veterinario, cuidador de perros/gatos, entrenador, peluquería, paseo de perros, guardería de mascotas), ciudad y una foto de perfil.
   - Podrá gestionar su perfil, responder mensajes, y ver comentarios de los usuarios.
   - Funcionalidades adicionales: modificar la lista de servicios ofrecidos, ver chats en tiempo real, leer y responder comentarios de clientes.
@@ -27,15 +28,19 @@ PetBook es una aplicación colaborativa que conecta usuarios que buscan servicio
 ### 1.2 Flujo de la Aplicación
 
 1. **Página de Inicio**:
+
    - Pantalla de carga con el logo de la aplicación.
    - Opciones de registro y login (incluye autenticación con terceros vía OAuth).
    - Acceso directo a la app con la opción de navegación sin registro.
+
 2. **Página "¿Qué hacemos hoy?"**:
 
    - Dos opciones: "Busco un servicio" o "Ofrezco un servicio".
 
 3. **Búsqueda de servicios**:
+
    - Si elige "Busco un servicio", se le muestra la opción "¿Qué servicio buscas?" con varias categorías de servicios. Después de seleccionar hasta 3 servicios, la app buscará proveedores basados en su ubicación o la ciudad que elija.
+
 4. **Perfil del Proveedor**:
 
    - Cada proveedor tendrá una **card** con detalles básicos. Al seleccionar un proveedor, se mostrará información más detallada (descripción, servicios, comentarios de clientes, y opción de chatear).
