@@ -4,7 +4,17 @@ const require = createRequire(import.meta.url);
 export default [
   {
     files: ['**/*.ts', '**/*.js'],
-    ignores: ['node_modules/', 'package.json', 'package-lock.json', 'jest.config.js', 'eslint.config.js', '.prettierrc', 'commitlint.config.ts'],
+    ignores: [
+      'node_modules/',
+      'build/',
+      'dist/',
+      'package.json',
+      'package-lock.json',
+      'jest.config.js',
+      'eslint.config.js',
+      '.prettierrc',
+      'commitlint.config.ts',
+    ],
     languageOptions: {
       parser: require('@typescript-eslint/parser'),
       parserOptions: {

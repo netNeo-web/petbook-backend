@@ -2,11 +2,14 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import path from 'path';
 import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
 
 import { AppError, NotFoundError } from './util/errors';
 
 // Cargar variables de entorno
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '..', '.env') });
 
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from './swagger.json';
