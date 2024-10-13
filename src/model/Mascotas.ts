@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, Index, ManyToOne, JoinColumn  } from "typeorm";
-import { IsNotEmpty, Length } from "class-validator";
 import { User } from "./Usuarios";
 
 enum PetType {
