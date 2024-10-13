@@ -8,4 +8,10 @@ export class Services {
 
   @Column()
   nombre: string;
+
+  @Column('decimal', {precision: 10, scale: 2})
+  precio: number;
+
+  @Column()
+  ubicacion: string;
 }
