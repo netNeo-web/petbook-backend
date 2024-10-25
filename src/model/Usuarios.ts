@@ -1,10 +1,21 @@
-import { Entity, PrimaryGeneratedColumn, Column, Index } from "typeorm";
-import { IsEmail, IsNotEmpty, Length } from "class-validator";
+import 'reflect-metadata';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  Index,
+  CreateDateColumn,
+  UpdateDateColumn,
+  JoinColumn,
+} from 'typeorm';
+import { IsEmail, IsNotEmpty } from 'class-validator';
+import { Services } from './Servicios';
+import { Pet } from './Mascotas';
 
 @Entity()
 export class User {
-  @PrimaryGeneratedColumn("uuid")
-  @Index("id-idx")
+  @PrimaryGeneratedColumn('uuid')
+  @Index('id-idx')
   id: string;
 
   @Column()
@@ -35,4 +46,10 @@ export class User {
 
   @UpdateDateColumn()
   fecha_actualizacion: Date;
+
+  @JoinColumn()
+  servicios: Services;
+
+  @JoinColumn()
+  pets: Pet;
 }
